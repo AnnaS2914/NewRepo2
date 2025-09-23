@@ -15,6 +15,7 @@ namespace homework
             Console.WriteLine("И ночь из бездны бархатного ларчика");
             Console.WriteLine("На землю льёт молочный звёздный свет");
             Console.WriteLine("Геннадий Молдавский");
+            Console.BackgroundColor = ConsoleColor.DarkCyan;
         }
     }
 }
