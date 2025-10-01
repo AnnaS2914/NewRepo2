@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C39DE79E-89DA-464D-A795-CCCA550B54C6}</ProjectGuid>
+    <ProjectGuid>{7A30359F-3DAB-4F63-8D42-D7372B44BFCE}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>расчеты19</RootNamespace>
-    <AssemblyName>расчеты19</AssemblyName>
+    <RootNamespace>расчеты</RootNamespace>
+    <AssemblyName>расчеты</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
