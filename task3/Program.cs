@@ -14,13 +14,15 @@ namespace task3
 
             var n = int.Parse(Console.ReadLine());
 
-            var x = n / 1000;
+            var a = n / 1000;          
+            var cd = n % 100;       
+            var b = (n / 100) % 10;   
 
-            var y = n % 100;
-
-            var result = x * 100 + y;
+            var result = a * 100 + cd;  
+            result = result * 10 + b;   
 
             Console.WriteLine("Полученное число: " + result);
+            Console.ReadLine();
         }
     }
 }
