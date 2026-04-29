@@ -1,9 +1,10 @@
 ﻿using DeviceLibrary;
 using System;
+using System.Collections.Generic;
 
 namespace DeviceLibrary
 {
-    public class Device
+    public class Device : IComparable<Device>
     {
         public string Name { get; set; }
         public string Manufacturer { get; set; }
@@ -42,6 +43,16 @@ namespace DeviceLibrary
                 repairTypeStr = "оплачиваемый";
             info[1] = $"Тип ремонта: {repairTypeStr}, неисправность: {FaultDescription}, цена: {RepairPrice:C}, мастер: {MasterFullName}";
             return info;
+        }
+
+        public int CompareTo(Device other)
+        {
+            if (other == null) return 1;
+
+            if (MasterFullName != other.MasterFullName)
+                return string.Compare(MasterFullName, other.MasterFullName, StringComparison.Ordinal);
+            else
+                return string.Compare(Name, other.Name, StringComparison.Ordinal);
         }
     }
 }
